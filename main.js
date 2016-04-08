@@ -1,6 +1,4 @@
-
-
-function tripleFive() {
+var tripleFive = function () {
     for(var i = 0; i < 3; i++) {
         console.log("Five! ")
     }
@@ -9,14 +7,14 @@ function tripleFive() {
 tripleFive()
 
 
-function lastLetter(str) {
+var lastLetter = function (str) {
     return str[str.length - 1]
 }
     
 console.log(lastLetter('hello'))
 
 
-function square(num) {
+var square = function (num) {
     return num *= num
 }
 
@@ -24,7 +22,7 @@ console.log(square(3))
 console.log(square(5))
 
 
-function negate(num) {
+var negate = function (num) {
     return num *= -1
 }
 
@@ -32,7 +30,7 @@ console.log(negate(5))
 console.log(negate(-8))
 
 
-function toArray(arg1, arg2, arg3) {
+var toArray = function (arg1, arg2, arg3) {
     var Arr = []
     
     Arr[0] = arg1
@@ -46,7 +44,7 @@ console.log(toArray(1, 4, 5))
 console.log(toArray(8, 9, 10))
 
 
-function startsWithA(str) {
+var startsWithA = function (str) {
     if (str[0] === 'a') {
         return true
     } else {
@@ -58,7 +56,7 @@ console.log(startsWithA('aardvark'))
 console.log(startsWithA('bear'))
 
 
-function excite(str) {
+var excite = function (str) {
     return str + '!!!'
 }
 
@@ -66,7 +64,7 @@ console.log(excite('yes'))
 console.log(excite('go'))
 
 
-function sun(str) {
+var sun = function (str) {
     if (str.indexOf('sun') === -1) {
         return false
     } else  {
@@ -79,7 +77,7 @@ console.log(sun('asunder'))
 console.log(sun('catapult'))
 
 
-function tiny(num) {
+var tiny = function (num) {
     if (num > 0 && num < 1) {
         return true
     } else {
@@ -92,7 +90,7 @@ console.log(tiny(14))
 console.log(tiny(-5))
 
 
-function getSeconds(str) {
+var getSeconds = function (str) {
     var tt = str.split(':')
     var mm = 0
     var ss = 0
